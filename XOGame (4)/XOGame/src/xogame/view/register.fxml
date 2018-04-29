@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xogame.control.register">
+   <children>
+      <ImageView fitHeight="63.0" fitWidth="302.0" layoutX="226.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/xogame/images/logo-enhanced.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="62.0" layoutX="153.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/xogame/images/game-tac-tic-toe-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="137.0" text="User Name" textFill="#3f259a">
+         <font>
+            <Font name="Calibri Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="183.0" text="Email" textFill="#3f259a">
+         <font>
+            <Font name="Calibri Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="229.0" text="Password" textFill="#3f259a">
+         <font>
+            <Font name="Calibri Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="275.0" text="Confirm Password" textFill="#3f259a">
+         <font>
+            <Font name="Calibri Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="327.0" layoutY="138.0" />
+      <TextField fx:id="email" layoutX="327.0" layoutY="184.0" />
+      <Button layoutX="258.0" layoutY="343.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: #f00;" text="Register" textFill="#e8e0e0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Calibri Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="confirm" layoutX="327.0" layoutY="276.0" prefHeight="25.0" prefWidth="149.0" />
+      <PasswordField fx:id="password" layoutX="327.0" layoutY="230.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button focusTraversable="false" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="37.0" text="Exit" textFill="#2969b7">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@/xogame/images/back.png" />
+               </source>
+            </ImageInput>
+         </effect>
+         <font>
+            <Font name="Forte" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

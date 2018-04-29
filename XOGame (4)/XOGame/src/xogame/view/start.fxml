@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="440.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xogame.control.start">
+   <children>
+      <ImageView fitHeight="63.0" fitWidth="302.0" layoutX="216.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/xogame/images/logo-enhanced.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="62.0" layoutX="143.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/xogame/images/game-tac-tic-toe-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="55.0" layoutX="152.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/xogame/images/avatar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="151.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/xogame/images/padlock.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="273.0" layoutY="306.0" mnemonicParsing="false" onAction="#start" prefHeight="44.0" prefWidth="94.0" style="-fx-background-color: #f00;" text="Start" textFill="#e1d5d5">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Calibri Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" layoutX="243.0" layoutY="213.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="username" layoutX="244.0" layoutY="139.0" prefHeight="25.0" prefWidth="196.0" />
+      <Button focusTraversable="false" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="37.0" text="Exit" textFill="#2969b7">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@/xogame/images/back.png" />
+               </source>
+            </ImageInput>
+         </effect>
+         <font>
+            <Font name="Forte" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

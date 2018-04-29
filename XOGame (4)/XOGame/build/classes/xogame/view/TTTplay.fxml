@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0"
+            prefWidth="607.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="xogame.control.TTTplay">
+<children>
+        <ImageView fitHeight="92.0" fitWidth="341.0" layoutX="160.0" layoutY="5.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@/xogame/images/logo-enhanced.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="67.0" fitWidth="69.0" layoutX="103.0" layoutY="3.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@/xogame/images/game-tac-tic-toe-icon.png"/>
+            </image>
+        </ImageView>
+        <ImageView blendMode="DARKEN" fitHeight="298.0" fitWidth="262.0" layoutX="169.0" layoutY="172.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/xogame/images/board.png"/>
+            </image>
+        </ImageView>
+        <!--      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="250.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView accessibleText="00" fitHeight="67.0" fitWidth="74.0" layoutX="183.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView accessibleText="01" fitHeight="67.0" fitWidth="74.0" layoutX="263.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView accessibleText="02" fitHeight="67.0" fitWidth="74.0" layoutX="343.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView accessibleText="10" fitHeight="67.0" fitWidth="74.0" layoutX="183.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView accessibleText="11" fitHeight="67.0" fitWidth="74.0" layoutX="262.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView accessibleText="12" fitHeight="67.0" fitWidth="74.0" layoutX="343.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView accessibleText="22" fitHeight="67.0" fitWidth="74.0" layoutX="343.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView accessibleText="21" fitHeight="67.0" fitWidth="74.0" layoutX="263.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView accessibleText="20" fitHeight="67.0" fitWidth="74.0" layoutX="183.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />-->
+        <Label layoutX="286.0" layoutY="143.0" text="Turn" textFill="#315a9a">
+            <font>
+                <Font name="Forte" size="29.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="254.0" layoutY="146.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@/xogame/images/letter-o.png"/>
+            </image>
+        </ImageView>
+        <Button layoutX="249.0" layoutY="429.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0"
+                onAction="#replay" text="RePlay" textFill="#0f9fd4">
+            <font>
+                <Font name="Forte" size="22.0"/>
+            </font>
+            <effect>
+                <InnerShadow color="#35a4cd"/>
+            </effect>
+        </Button>
+        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="37.0"
+                onAction="#back" text="Exit" textFill="#2969b7">
+            <font>
+                <Font name="Forte" size="17.0"/>
+            </font>
+            <effect>
+                <ImageInput>
+                    <source>
+                        <Image url="@/xogame/images/back.png"/>
+                    </source>
+                </ImageInput>
+            </effect>
+        </Button>
+        <ComboBox fx:id="options" layoutX="501.0" layoutY="29.0" prefHeight="25.0" prefWidth="90.0" focusTraversable="false">
+            <effect>
+                <InnerShadow color="#1389ff"/>
+            </effect>
+        </ComboBox>
+    </children>
+</AnchorPane>
